@@ -49,7 +49,7 @@ html {
 .donate-today {
     margin: 120px auto;
     text-align: center;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .donate-today ul {
@@ -81,11 +81,15 @@ html {
     border: 2px solid tomato;
 }
 
-.donate-today h1 {
+.top-heading {
+    text-align: center;
+}
+
+.top-heading h1 {
     font-size: 45px;
 }
 
-.donate-today p {
+.top-heading p {
     color: grey;
     margin: 20px 0;
 }
@@ -109,4 +113,33 @@ html {
 .donate-today input[type=submit] {
     padding: 15px 20px;
     font-size: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container .plan-items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container .plan-items .pitem {
+    width: 31%;
+    line-height: 1.7;
+    padding: 50px 20px;
+}
+
+#item1 {
+    background-color: #EDF5F6;
+}
+
+#item2 {
+    background-color: #FFEEEE;
+}
+
+#item3 {
+    background-color: #FFF4D6;
 }
