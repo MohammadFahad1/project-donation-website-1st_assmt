@@ -117,7 +117,7 @@ html {
 
 .container {
     max-width: 1100px;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .container .plan-items {
@@ -142,4 +142,86 @@ html {
 
 #item3 {
     background-color: #FFF4D6;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+    background: url('images/donation4.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-family: 'times new roman';
+}
+
+.quote h1 {
+    font-size: 50px;
+}
+
+.quote::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(22, 22, 22);
+    opacity: .8;
+    z-index: -1;
+}
+
+.subscribe-form {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    margin: auto;
+    background-color: #FFF4D6;
+}
+
+.subscribe-form input[type=email] {
+    padding: 13px 15px;
+    min-width: 250px;
+    background-color: #D9D9D9;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+}
+
+
+.subscribe-form input[type=submit] {
+    padding: 13px 20px;
+    min-width: 120px;
+    background-color: #FF5959;
+    border: none;
+    margin-left: -5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+footer h2 {
+    color: tomato;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
 }
